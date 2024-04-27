@@ -158,7 +158,7 @@ msg = (tag content? ':' sp)? mex;
 
 fail := (any - [\n\r])* @err{ fgoto main; };
 
-main := pri (timestamp | (rfc3339 when { m.rfc3339 })) sp hostname sp msg;
+main := pri sp* (timestamp | (rfc3339 when { m.rfc3339 })) sp+ hostname sp+ msg;
 
 }%%
 
