@@ -138,7 +138,7 @@ func Example_besteffort() {
 	//   Appname: (*string)(<nil>),
 	//   ProcID: (*string)(<nil>),
 	//   MsgID: (*string)(<nil>),
-	//   Message: (*string)(<nil>)
+	//   Message: (*string)((len=1) "-")
 	//  }
 	// })
 }
